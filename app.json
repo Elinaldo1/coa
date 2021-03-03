@@ -1,0 +1,12 @@
+{
+  "name": "coabsa",
+  "displayName": "coabsa",
+  "expo": {
+    "name": "coabsa",
+    "slug": "coabsa",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
