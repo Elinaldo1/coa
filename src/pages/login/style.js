@@ -10,10 +10,8 @@ export const Styles = StyleSheet.create({
   },
   containerlogo:{
     flex:1,
-    width:'100%',
-    alignItems:'center',
     justifyContent: 'center',
-    backgroundColor:'#fff'
+    // backgroundColor:'#fff'
   },
   container:{
     flex:1,
@@ -22,23 +20,9 @@ export const Styles = StyleSheet.create({
     width: '90%',
    
   },
-  input:{
-    backgroundColor:"#fff",
-    width:'50%',
-    marginBottom:15,
-    color:'#222',
-    fontSize:17,
-    borderRadius:7,
-    padding:10
-
-  },
-  btnsubmit:{
-    backgroundColor:"#35aaff",
-    width:'50%',
-    height:45,
-    marginBottom:15,
-    alignItems:'center',
-    justifyContent:'center',
-    borderRadius:7
+  title:{
+    fontSize:20,
+    fontWeight:"bold"
   }
+
 });

@@ -1,6 +1,6 @@
 import React from "react";
-import { KeyboardAvoidingView, Image, TextInput, TouchableOpacity, Text } from "react-native";
-import { Background, Input } from './style';
+import { View, KeyboardAvoidingView, Image, TextInput, TouchableOpacity, Text } from "react-native";
+import { Styles } from './style';
 
 export default function Login(){
   return(
@@ -10,14 +10,14 @@ export default function Login(){
       </View>
 
       <View style = { Styles.container }> 
-        <TextInput keyboardType='numeric' style={Styles.input} placeholder = 'Matrícula' autoCorrect={ false } onChangeText = {()=>{}} />
-        {/* <TextInput style={Styles.input} placeholder = 'Senha' autoCorrect={ false } onChangeText = {()=>{}} /> */}
+        {/* <TextInput placeholder = 'User' autoCorrect={ false } onChangeText = {()=>{}} /> */}
+        <TextInput placeholder = 'Matrícula' keyboardType="numeric" autoCorrect={ false } onChangeText = {()=>{}} />
 
-        <TouchableOpacity style={Styles.btnsubmit}>
-          <Text>Acessar</Text>
+        <TouchableOpacity>
+          <Text style={Styles.title}>Acessar</Text>
         </TouchableOpacity>
 
-        {/* <TouchableOpacity style={Styles.btnsubmit}>
+        {/* <TouchableOpacity>
           <Text>Criar Contar</Text>
         </TouchableOpacity> */}
 
