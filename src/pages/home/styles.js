@@ -1,3 +1,4 @@
+import React from 'react'
 import { StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
 
@@ -25,10 +26,20 @@ export const styles = StyleSheet.create({
   }
 });
 
-export const Text = styled.Text`
+ const Text = styled.Text`
 /* deve ficar na pasta components */
- /* font-weight: 'bold'; */
+ font-weight: 'bold';
  font-size: 20px;
+ color:#fff;
  /* backgroundColor:#f11; */
 
+`;
+ const BotaoContainer = styled.TouchableOpacity`
+  margin-top:10px;
+  width:50%;
+  height:40px;
+  align-items: center;
+  background-color: "#d3f6";
+  padding:10px;
+  border-radius: 10px;
 `;

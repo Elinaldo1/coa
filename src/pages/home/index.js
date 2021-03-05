@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet , View, TouchableOpacity, ScrollView } from 'react-native';
+import {Text, StyleSheet , View, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import Header from '../header/index';
-import {styles, Text} from './styles';
+import {styles, Botao} from './styles';
 import { AntDesign } from '@expo/vector-icons'
 
 

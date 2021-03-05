@@ -1,14 +1,13 @@
+import React from 'react';
 import styled from 'styled-components/native';
-import Text from 'react-native';
 
 
-export const Texto = styled.Text `
+export const Texto = styled.TextInput`
     background-color:#fff;
     font-size:15px;
     border-radius:7px;
-    margin:10px;
     width:50%;
-    height:50px;
-    
-    
-`
+    height:30px;
+    text-align: center;
+
+`;

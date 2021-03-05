@@ -1,19 +1,21 @@
-const Produto = require('../models/produto');
+import React from 'react';
+import { Alert } from 'react-native';
 
-async function criar(value)  {
+async function Criar (props) {
+  const Produto = require('../models/produto');
+
   const database = require('../databases');
-  const data = {value}
   try {
     const resultado = await database.sync();
-    // console.log(resultado);
-
-    const resutadoOperacao = await   Produto.create({data});
+    //  console.log(resultado);
+    Alert.alert('Sync','ok');
+    const resutadoOperacao = await   Produto.create(props.data);
     console.log(resutadoOperacao)
   } catch(error) {
     console.log(error)
   }
 }; 
-export default criar;
+export default Criar;
 async function insert(){
   try{
     Produto.create({
