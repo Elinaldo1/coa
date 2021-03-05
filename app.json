@@ -5,8 +5,16 @@
     "name": "coabsa",
     "slug": "coabsa",
     "version": "1.0.0",
+    "icon":"./src/assets/cadastrar.png",
+    "splash":{
+      "image":"",
+      "background":"#ff34"
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "web": {
+      "favicon": "./src/assets/cadastrar.png"
+    }
   }
 }

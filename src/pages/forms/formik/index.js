@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View } from 'react-native';
+import { Button, View, Text } from 'react-native';
 import { Texto, BtnSubmit } from '../index';
 
 import { withFormik } from 'formik';
@@ -11,25 +11,29 @@ const Formi = (props) => (
     <Texto
       keyboardType='email-address'
       // style={{backgroundColor:"#fff",width:"50%", borderWidth:1}}
-      value={props.values.email}
+      value={props.values.nome}
       onChangeText={text => props.setFieldValue('email', text)}
     />
-
-    <Texto 
-    keyboardType=''
-    // style={{backgroundColor:"#f11", width:"50%", marginBottom:5}}
-      value={props.values.password}
-      onChangeText={text => props.setFieldValue('password', text)}
-    />
+    
+    <View style={{borderWidth:1, width:"90%"}}>
+      <Text>GEMAS</Text>
+      <Texto 
+      keyboardType=''
+      // style={{backgroundColor:"#f11", width:"50%", marginBottom:5}}
+        value={props.values.preco}
+        onChangeText={text => props.setFieldValue('password', text)}
+      />
     <Texto
     // style={{backgroundColor:"#f11", width:"50%"}}
-      value={props.values.teste}
+      value={props.values.descricao}
       onChangeText={text => props.setFieldValue('teste', text)}
     />
+    </View>
 
-    <BtnSubmit
+
+    <Button
       onPress={props.handleSubmit}
-      title="Login"
+      title="SALVAR"
     />
   </View>
 );
@@ -43,7 +47,7 @@ const Formi = (props) => (
 //       .required('Preencha o campo senha')})
 
 export default withFormik({
-  mapPropsToValues: () => ({ email: '', password: '',teste:'' }),
+  mapPropsToValues: () => ({ nome: '', preco: '',descricao:'' }),
 
   validateOnChange: false,
 

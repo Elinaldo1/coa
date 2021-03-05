@@ -1,6 +1,7 @@
 import React from "react";
 import { View, KeyboardAvoidingView, Image, TextInput, TouchableOpacity, Text } from "react-native";
 import { Styles } from './style';
+import {BtnSubmit} from '../forms'
 
 export default function Login(){
   return(
@@ -20,7 +21,7 @@ export default function Login(){
         {/* <TouchableOpacity>
           <Text>Criar Contar</Text>
         </TouchableOpacity> */}
-
+      
       </View>
     </KeyboardAvoidingView>
   )
