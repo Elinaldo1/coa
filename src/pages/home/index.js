@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Header caption="Tela 1" />
       <ScrollView /*style={styles.container}*/>
-      <AntDesign name = "swap" style = {{fontSize:30}} />
+      <AntDesign name = "save" style = {{fontSize:30}} />
           <TouchableOpacity style={styles.button} onPress = {incrementar}>
             <Text >CONTADOR</Text>
           </TouchableOpacity> 

@@ -1,10 +1,22 @@
 
-import React, { useState } from 'react';
-import Routes from './src/Routes';
-import { useEffect } from 'react';
 import * as Updates from 'expo-updates';
+import React, { useEffect } from 'react';
+// import { Cores } from '../../cores';
+import Routes from './src/Routes';
+
+const Cores = {
+   inputs: '',
+   textInputs: '',
+   buttons: '',
+   background: '#f455',
+   titulos: '',
+   subtitulos: '',
+ }
 
 export default function App() {
+   // if (__DEV__) {
+   //    require('react-devtools');
+   //  }
    useEffect(() => {
       async function updateapp(){
          const { isAvailable } = await Updates.checkForUpdateAsync()
@@ -16,5 +28,10 @@ export default function App() {
       }
       updateapp();
    },[]);
-   return(<Routes />);
+
+   return(
+      // <TeamProvider theme={Cores}>
+         <Routes />
+      
+   );
 }

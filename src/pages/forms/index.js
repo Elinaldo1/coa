@@ -1,4 +1,14 @@
-import { Texto } from './TextInput';
-import { BtnSubmit } from './BtnSubmit';
+import { BtnSubmit, ButtonText } from './BtnSubmit';
+import { inputContainer, InputText } from './TextInput';
 
-export { Texto, BtnSubmit };
+export default function BotaoForm(props) {
+  return(
+    <BtnSubmit>
+       <ButtonText></ButtonText>
+    </BtnSubmit>
+  )
+};
+
+
+export { InputText, inputContainer };
+
